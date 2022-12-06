@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form class="form_cad" action="">
+      <div class="form-header">
+        <p>To-Do App</p>
+      </div>
+      <div id="creationstatus" class=""></div>
+      <!-- Campo nome -->
+      <label>
+        Nome:
+        <input id="cad_name" type="text">
+      </label>
+      <span class="errorMsg" id="errorMsg"></span>
+
+      <!-- Campo sobrenome -->
+      <label>
+        Sobrenome:
+        <input id="cad_secondname" type="text">
+      </label>
+      <span class="errorMsg" id="errorMsg"></span>
+
+      <!-- Campo e-mail -->
+      <label>
+        Email:
+        <input id="cad_email" type="email">
+      </label>
+      <span class="errorMsg" id="errorMsg"></span>
+
+
+      <!-- Campo senha -->
+      <label>
+        Senha:
+        <input id="cad_password" type="password">
+      </label>
+      <span class="errorMsg" id="errorMsg"></span>
+
+
+      <!-- Campo confirmar senha -->
+      <label>
+        Repetir senha:
+        <input id="cad_confirmPassword" type="password">
+      </label>
+      <span class="errorMsg" id="errorMsg"></span>
+
+
+      <button type="submit" class="submit" id="submit">Criar Conta</button>
+
+    </form>
+    <div class="ingressar">
+      <a href="index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+
+  <!-- ---------------------- lógica aplicada no registro -------------------- -->
+  <script src="./scripts/signup.js"></script>
+
+</body>
+
+</html>
